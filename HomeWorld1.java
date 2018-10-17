@@ -34,20 +34,25 @@ public class HomeWorld1 extends World
     {
       papplet.fill(255);
       papplet.textSize(40);
-      papplet.text("CONTROLS:", 20, 200);
-      papplet.textSize(19);
-      papplet.text("ZOOM: 'a' & 'z' keys", 20, 235);
-      papplet.text("ARROW KEYS :", 20, 275);
-      papplet.text("ROTATE: left & right arrow keys", 20, 294);
-      papplet.text("UP & DOWN: up & down arrow keys", 20, 316);
-      papplet.text("or...MOUSE :", 20, 350);
-      papplet.text("navigate by dragging and holding", 20, 366);
+      //papplet.text("CONTROLS:", 20, 200);
+      papplet.textSize(25);
+      papplet.text("try touching the MOVING SPHERE!", 15, 565);
 
-      papplet.textSize(30);
-      papplet.text("to SWITCH WORLDS:", 15, 527);
-      papplet.textSize(19);
-      papplet.text("touch the MOVING SPHERE to move to the NEXT WORLD", 15, 565);
-      papplet.text("at any point, touch the CENTER SPHERE to return HOME", 15, 590);
+      papplet.text("FORWARD & BACK: 'a' & 'z'", 20, 235);
+      //papplet.text("ARROW KEYS :", 20, 275);
+
+      papplet.text("UP & DOWN: up & down arrow keys", 20, 316);
+      papplet.text("ROTATE: left & right arrow keys", 20, 294);
+
+    //  papplet.text("or...MOUSE :", 20, 350);
+    //  papplet.text("navigate by dragging and holding", 20, 366);
+
+      // papplet.textSize(30);
+      // papplet.text("to SWITCH WORLDS:", 15, 527);
+      // papplet.textSize(19);
+      // papplet.text("touch the MOVING SPHERE to move to the NEXT WORLD", 15, 565);
+
+      // papplet.text("at any point, touch the CENTER SPHERE to return HOME", 15, 590);
 
     }
 
