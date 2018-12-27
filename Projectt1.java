@@ -16,8 +16,6 @@ public class Projectt1 extends PApplet
   public void setup()
   {
 
-
-
       minim = new Minim(this);
 
 
@@ -37,11 +35,6 @@ public class Projectt1 extends PApplet
       current.getCurrentSound().play();
 
       state = 0; //not necessary at the moment but maybe can use later
-
-
-
-
-
   }
 
 
@@ -59,8 +52,8 @@ public class Projectt1 extends PApplet
 
       fill(255);
       //text("current world:", 25, 25);
-      textSize(100);
-      text(current.name(), 250, 77);
+      textSize(80);
+      text(current.name(), 220, 77);
       textSize(12);
       //fill(0);
 
@@ -79,13 +72,6 @@ public class Projectt1 extends PApplet
         state ++;
         stateChange();
       }
-
-      /*if (homeSphere.toHome() == true)
-      {
-        state --;
-        stateChange();
-      }*/
-
 
   }
 
@@ -134,6 +120,8 @@ public class Projectt1 extends PApplet
     cylNav.initialize();
 
   }
+
+
   public void keyPressed()
   {
       cylNav.keyPressed();

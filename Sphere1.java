@@ -4,6 +4,7 @@ public class Sphere1
 {
 
   private PApplet papplet;
+  private World currentWorld;
 
   private float x;
   private float y;
@@ -16,18 +17,31 @@ public class Sphere1
 
   private float r;
 
+  private float fillR;
+  private float fillG;
+  private float fillB;
+
+  private float strokeR;
+  private float strokeG;
+  private float strokeB;
+
   public Sphere1(PApplet papplet, boolean move, float r)
   {
     this.papplet = papplet;
 
     this.r = r;
 
+    fillR = 255;
+    fillG = 255;
+    fillB = 255;
+
+    strokeR = 255;
+    strokeG = 255;
+    strokeB = 255;
+
     x = 0f;
     y = 0f;
     z = 0f;
-
-
-
 
     if (move == true)
     {
@@ -61,13 +75,34 @@ public class Sphere1
     return z;
   }
 
+  public void changeRadius(float newRadius){
+    r = newRadius;
+  }
+
+  public void changeFill(float newR, float newG, float newB){
+    fillR = newR;
+    fillG = newG;
+    fillB = newB;
+  }
+
+  public void changeStroke(float newR, float newG, float newB){
+    strokeR = newR;
+    strokeG = newG;
+    strokeB = newB;
+  }
+
   public void drawSphere()
   {
 
+    //currentWorld = papplet.getCurrentWorld();
+    //WHYYYYYY
+
+    //r = currentblah
+
     papplet.pushMatrix();
     papplet.translate(x, y, z);
-    papplet.stroke(255);
-    papplet.fill(0);
+    papplet.stroke(strokeR, strokeG, strokeB);
+    papplet.fill(fillR, fillG, fillB);
     papplet.sphere(r);
     papplet.popMatrix();
 
